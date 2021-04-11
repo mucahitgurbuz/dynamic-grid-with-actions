@@ -1,0 +1,27 @@
+{
+  "name": "dynamic-grid-with-actions-demo",
+  "version": "1.0.0",
+  "description": "A grid page with some interactivity",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "node start-client.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "build": "cd client && yarn build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "15.0.1",
+    "npm": "7.0.3",
+    "yarn": "1.22.5"
+  },
+  "author": "Mücahit Gürbüz",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

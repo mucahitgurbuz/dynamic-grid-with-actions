@@ -1,0 +1,3 @@
+export const GET_EVENTS = 'GET_EVENTS'
+export const EVENTS_LOADING = 'EVENTS_LOADING'
+export const EVENTS_ERROR = 'EVENTS_ERROR'

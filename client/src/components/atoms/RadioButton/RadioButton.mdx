@@ -1,0 +1,30 @@
+---
+name: RadioButton
+route: /component/radiobutton
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import RadioButton from './RadioButton'
+import { Provider, Flex, Text } from 'bumbag'
+import theme from '../../../theme'
+import { FaCheck } from 'react-icons/fa'
+
+# RadioButton
+
+A styled radio button component.
+
+## Props
+
+<Props of={RadioButton} />
+
+## Basic usage
+
+<Playground>
+  <Provider theme={theme}>
+    <Flex flexDirection="column" gap="12px">
+      <RadioButton isSelected label="Selected" />
+      <RadioButton isSelected={false} label="Unselected" />
+    </Flex>
+  </Provider>
+</Playground>
